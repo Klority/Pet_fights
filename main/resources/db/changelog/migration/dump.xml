@@ -1,0 +1,36 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet id="fill-pet-table" author="Ksenya">
+        <insert tableName="pets">
+            <column name="name" value="Stitch"/>
+            <column name="type" value="Dog"/>
+            <column name="color" value="Black"/>
+            <column name="hit_points" value="100000"/>
+        </insert>
+
+        <insert tableName="pets">
+            <column name="name" value="Sparky"/>
+            <column name="type" value="Dog"/>
+            <column name="color" value="White"/>
+            <column name="hit_points" value="10000"/>
+        </insert>
+
+        <insert tableName="pets">
+            <column name="name" value="Pikachu"/>
+            <column name="type" value="Cat"/>
+            <column name="color" value="White"/>
+            <column name="hit_points" value="100012"/>
+        </insert>
+
+        <insert tableName="pets">
+            <column name="name" value="Pikalo"/>
+            <column name="type" value="Dog"/>
+            <column name="color" value="Red"/>
+            <column name="hit_points" value="1"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
